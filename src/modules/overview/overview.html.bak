@@ -1,0 +1,98 @@
+<main ng-controller="OverviewController as ctrl" id="overview" class="overview">
+  <article class="one-col">
+    <!-- HEADER -->
+    <div class="row site-header">
+      <div class="col">
+       <header class="ten-two">
+         <div class="row">
+           <div class="primary">
+              <h1 class="site-tag">ABC Courier Services</h1>
+              <h5>Last updated at {{ctrl.lastRunDate}}</h5>
+           </div>
+           <div class="secondary ov-user">
+            <p class="text-right">Welcome <em>{{ctrl.name}}</em><a ui-sref="logout">Logout</a></p>
+           </div>
+         </div>
+       </header>
+      </div>
+    </div>
+    <!-- CONTROL BAR -->
+    <div class="row">
+      <div class="col container-full">
+      </div>
+    </div>
+    <!-- PRIMARY METRIC SECTION -->
+    <div class="row">
+      <div class="col container-full" cg-busy="ctrl.metricLoader">
+        <d3-chart id="primary-metric" config="ctrl.metrics">
+          <d3-chart-header></d3-chart-header>
+          <d3-chart-query></d3-chart-query>
+          <primary-metric></primary-metric>
+          <d3-chart-footer></d3-chart-footer>
+        </d3-chart>
+      </div>
+    </div>
+
+     <!-- Area -->
+     <div class="row">
+      <div class="col container-full" cg-busy="ctrl.etaPromise">
+      <d3-chart id="eta-volume" config="ctrl.eta">
+          <d3-chart-header></d3-chart-header>
+          <d3-chart-query></d3-chart-query>
+          <d3-area></d3-area>
+          <d3-chart-footer></d3-chart-footer>
+        </d3-chart>
+      </div>
+    </div>
+
+    <!-- TOP 20 -->
+     <div class="row">
+      <div class="col container-full">
+        <section class="three-col container-full">
+          <div class="row">
+            <div class="col" cg-busy="ctrl.totalCashPromise">
+              <d3-chart id="totalCash" config="ctrl.totalCash">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+
+            <div class="col" cg-busy="ctrl.totalCashBoyPromise" >
+            <d3-chart id="totalCashBoy" config="ctrl.totalCashBoy">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+
+            <div class="col" cg-busy="ctrl.totalCashTimePromise">
+            <d3-chart id="totalCashtime" config="ctrl.totalCashTime">
+                <d3-chart-header></d3-chart-header>
+                <d3-chart-query></d3-chart-query>
+                <d3-horizontal-bar></d3-horizontal-bar>
+                <d3-chart-footer></d3-chart-footer>
+              </d3-chart>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Bar -->
+    <div class="row">
+      <div class="col container-full" cg-busy="ctrl.totalSalesPromise">
+      <d3-chart id="totalSales-volume" config="ctrl.totalSales">
+          <d3-chart-header></d3-chart-header>
+          <d3-chart-query></d3-chart-query>
+          <d3-bar></d3-bar>
+          <d3-chart-footer></d3-chart-footer>
+        </d3-chart>
+      </div>
+    </div>
+
+  </article>
+</main>
+

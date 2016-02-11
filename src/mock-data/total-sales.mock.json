@@ -1,0 +1,32 @@
+[
+    {
+    "city": "mumbai",
+    "description": "Editing/Copy Editing",
+    "count": 323
+  },
+  {
+    "city": "delhi",
+    "description": "Excel",
+    "count": 423
+  },
+  {
+    "city": "chennai",
+    "description": "Editing/Copy Editing",
+    "count": 86
+  },
+  {
+    "city": "kolkata",
+    "description": "Excel",
+    "count": 453
+  },
+  {
+    "city": "hyderabad",
+    "description": "Editing/Copy Editing",
+    "count": 399
+  },
+  {
+    "city": "indore",
+    "description": "Excel",
+    "count": 278
+  }
+]

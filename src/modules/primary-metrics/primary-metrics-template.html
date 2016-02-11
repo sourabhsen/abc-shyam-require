@@ -1,0 +1,17 @@
+<div class="three-col">
+  <div class="row">
+    <div ng-repeat="metric in metrics" class="col" >
+      <div class="metric-widget bg-transparent text-left">
+        <div class="metric-widget-body clearfix">
+          <div class="metric-widget-icon pull-right">
+            <i class="icon icon-{{metric.metricName | lowercase}}-logo"></i>
+          </div>
+          <div class="pull-left">
+          <div class="metric-widget-header text-center">{{metric.metricName}}</div>
+          <div class="metric-count text-center">{{metric.count | number:0}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

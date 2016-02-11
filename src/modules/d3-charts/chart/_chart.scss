@@ -1,0 +1,13 @@
+@import "../date/date";
+@import "../header/header";
+@import "../message/message";
+@import "../miso/area/area";
+@import "../miso/horizontal-bar/horizontal-bar";
+@import "../miso/bar/bar";
+@import "../query/query";
+
+.ch-directive {
+  background: $white;
+  display: block;
+  border:solid 1px $gray-light;
+}

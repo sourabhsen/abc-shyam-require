@@ -1,0 +1,25 @@
+.site-header {
+    box-shadow: 0 2px 1px #777;
+    -webkit-box-shadow : 0 2px 1px #777;
+
+  background-color: $gray-light;
+  .site-tag {
+    font-size: 21px;
+    color: $gray-dark;
+  }
+  strong {
+    font-size: 21px;
+    color: $black;
+  }
+  .ov-user {
+    margin-top: 27px;
+    a {
+      float:right;
+    }
+  }
+  ul.dropdown-menu li a {
+    cursor: pointer;
+  }
+}
+
+

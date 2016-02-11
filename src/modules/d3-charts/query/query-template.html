@@ -1,0 +1,15 @@
+<section class="four-eight ch-query">
+  <div class="row flatten">
+    <div class="primary">
+      <d3-chart-date></d3-chart-date>
+    </div>
+    <div class="secondary" ng-if="showGrpButton">
+      <div class="btn-group btn-group-justified">
+        <label class="btn btn-primary" ng-click="triggerEvent('global-date','today')" ng-model="radioModel" uib-btn-radio="'Left'">Today</label>
+        <label class="btn btn-primary" ng-click="triggerEvent('global-date','lastWeek')" ng-model="radioModel" uib-btn-radio="'Middle'">Week</label>
+        <label class="btn btn-primary" ng-click="triggerEvent('global-date','lastMonth')" ng-model="radioModel" uib-btn-radio="'Right'">Month</label>
+      </div>
+    </div>
+  </div>
+  <div class="row"></div>
+</section>

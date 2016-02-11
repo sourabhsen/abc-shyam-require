@@ -1,0 +1,18 @@
+<div class="ch-date-wrapper">
+  <form class="ch-date-quick-pick" role="dialog" tabindex="-1">
+    <ul>
+      <li>
+        <label for="today" class="sr-only"></label>
+        <button class="btn btn-primary" ng-click="quickPick('today')" tabindex="0" id="today" title="Today">Today</button></li>
+      <li>
+        <label for="lastWeek" class="sr-only"></label>
+        <button class="btn btn-primary" ng-click="quickPick('lastWeek')" tabindex="1" id="lastWeek" title="Last Week">Last Week</button></li>
+      <li>
+        <label for="lastMonth" class="sr-only"></label>
+        <button class="btn btn-primary" ng-click="quickPick('lastMonth')" tabindex="2" id="lastMonth" title="Last Month">Last Month</button></li>
+      <li>
+        <label for="customDate" class="sr-only"></label>
+        <button class="btn btn-primary" ng-click="customDateRange()" tabindex="3" id="customDate" title="Custom Date">Custom</button></li>
+    </ul>
+  </form>
+</div>

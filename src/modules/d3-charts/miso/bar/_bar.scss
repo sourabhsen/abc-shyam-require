@@ -1,0 +1,18 @@
+.bar .label {
+    font-size: 10px;
+  }
+  .bar .ylabels .tick line {
+    fill: none;
+    stroke: #222;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+  }
+  .bar path.domain {
+    fill: none;
+    stroke: #222;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+  }
+  .bar rect {
+    fill: $green-light;
+  }
